@@ -1,0 +1,39 @@
+@use "../../styles/abstract/mixin" as mixin;
+@use "../../styles/abstract/variable" as variable;
+
+.header {
+  background-color: #212121;
+  color: variable.$Grey-95;
+  @include mixin.flex($justify: space-between, $align: center);
+  height: 7rem;
+}
+.left {
+  @include mixin.flex($justify: space-between, $align: center);
+  flex-basis: 60%;
+}
+.info-item {
+  @include mixin.flex($justify: space-between, $align: center);
+}
+.icon {
+  margin-right: 0.5rem;
+}
+
+/* HEADER RIGHT */
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 20%;
+}
+.social-media-icons {
+  @include mixin.flex($justify: space-around, $align: center);
+  flex-basis: 35%;
+  color: rgba(245, 245, 245, 0.698);
+}
+
+.social-media-icons:hover {
+    color: rgba(variable.$Grey-95, 0.498);
+}
+.icon {
+  color: variable.$primary;
+}

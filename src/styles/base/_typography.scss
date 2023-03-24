@@ -1,0 +1,16 @@
+@use "../../styles/abstract/variable" as variable;
+
+.secondary-text {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+}
+.secondary-header{
+    font-size: 2.4rem;
+    color: variable.$white;
+}
+
+.section-title{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #212121;
+}

@@ -1,0 +1,49 @@
+@use "../../styles/abstract/mixin" as mixin;
+@use "../../styles/abstract/variable" as variable;
+
+.tracker {
+  background-image: url("../../assets/globus_image_large.jpg");
+  background-size: cover;
+  background-position: right;
+  min-height: 25rem;
+  @include mixin.flex($justify: center);
+  flex-direction: column;
+}
+
+.tracking {
+  width: 80%;
+}
+.highlight-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -1px;
+}
+
+/* SERVICES */
+.solutions {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+}
+.title-inner {
+  margin-bottom: 1rem;
+  color: variable.$grey-1;
+}
+/* SERVICE CARD */
+.card-icon::before {
+  content: "\a930";
+}
+.row {
+  @include mixin.flex($justify: space-between, $align: center);
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  row-gap: 6rem;
+}
+
+/* SOLUTIONS SECTION */
+.solutions{
+    background-image: url('../../assets/background14.jpg');
+}

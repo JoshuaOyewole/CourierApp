@@ -1,0 +1,23 @@
+@use "../../styles/abstract/variable" as variable;
+
+.card {
+    flex-basis: 30%;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    background: #f6f4f4;
+  
+    &-title {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 3rem 0;
+    }
+  
+    &-info {
+      font-weight: 500;
+      font-family: Roboto;
+      line-height: 2.8rem;
+      letter-spacing: 0.5px;
+      color: variable.$grey-2;
+    }
+  }

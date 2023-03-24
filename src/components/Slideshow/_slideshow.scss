@@ -1,0 +1,30 @@
+@use "../../styles/abstract/mixin" as mixin;
+@use "../../styles/abstract/variable" as variable;
+
+.slideshow{
+    background-image: url('../../assets/background14.jpg');
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    @include mixin.flex($justify:flex-start, $align:center)
+}
+
+.services{
+    text-transform: uppercase;
+    color: variable.$white;
+}
+
+.heading{
+    text-transform: uppercase;
+    color: variable.$white;
+    font-size: 6rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 2rem 0 4rem 0;
+}
+
+.primary-color{
+    color: variable.$primary;
+}
+.break{
+    display: block;
+}

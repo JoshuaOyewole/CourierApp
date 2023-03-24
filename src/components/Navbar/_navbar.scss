@@ -1,0 +1,36 @@
+@use "../../styles/abstract/mixin" as mixin;
+@use "../../styles/abstract/variable" as variable;
+
+.navbar {
+  @include mixin.flex($justify: space-between, $align: center);
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  width: 25rem;
+  height: auto;
+}
+
+.nav-bar {
+  list-style-type: none;
+  @include mixin.flex($justify: space-between, $align: center);
+  flex-basis: 70%;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: variable.$primary;
+    border-bottom: 2px solid variable.$primary;
+    transition: border-bottom 300ms linear, color 300ms linear,
+      box-shadow 300ms linear, background-color 300ms linear;
+  }
+}
+
+.active {
+  color: variable.$primary;
+  border-bottom: 2px solid variable.$primary;
+}
